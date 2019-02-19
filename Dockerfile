@@ -1,4 +1,4 @@
-FROM maven:latest
+FROM maven:3.6.0
 ENV DOCKER_CHANNEL stable
 ENV DOCKER_VERSION 18.09.0
 RUN set -eux; \
