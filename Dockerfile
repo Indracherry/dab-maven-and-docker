@@ -1,4 +1,4 @@
-FROM maven:3.6.0
+FROM maven:3.6.0-jdk-8-alpine
 ENV DOCKER_CHANNEL stable
 ENV DOCKER_VERSION 18.09.0
 RUN set -eux; \
