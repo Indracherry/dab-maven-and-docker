@@ -16,3 +16,6 @@ RUN set -eux; \
 	\
 	dockerd --version; \
 	docker --version
+
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && apk add python3
+RUN pip3 install awscli
